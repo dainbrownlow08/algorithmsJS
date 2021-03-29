@@ -1,8 +1,14 @@
+// helper function swaps positions in array
+
 function swap(i, j, array) {
   let temp = array[i];
   array[i] = array[j];
   array[j] = temp;
 }
+
+// uses isSorted to keep track if we changed the array, if not sort is completed
+// while isSorted is false, go through the entire array switching each value if the
+// next value is less
 
 function bubbleSort(array) {
   let isSorted = false;
